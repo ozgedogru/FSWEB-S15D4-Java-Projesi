@@ -11,6 +11,11 @@ public class Main {
         System.out.println(checkForPalindrome("hello"));
         System.out.println(checkForPalindrome("Don't node"));
 
+        //PART-2
+        int decimalNumber = 16;
+        String binaryNumber = DecimalToBinary.decimalToBinary(decimalNumber);
+        System.out.println(decimalNumber +" sayısının binary formu: "+binaryNumber);
+
     }
 
     public static boolean checkForPalindrome(String text) {
@@ -18,7 +23,7 @@ public class Main {
         Stack<Character> stack = new Stack<>();
         Queue<Character> queue = new LinkedList<>();
 
-        for(char c : text.toCharArray()) {
+        for (char c : text.toCharArray()) {
             stack.push(c);
             queue.add(c);
         }
